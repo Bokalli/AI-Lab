@@ -1,0 +1,38 @@
+# Adaptive Grid World Agent
+
+This project implements a grid-based simulation where an agent navigates a grid world to reach a target while avoiding obstacles. It uses **Python** and the **Pygame** library for visualization and **BFS (Breadth-First Search)** for pathfinding.
+
+## Features
+- **Dynamic Grid Generation**: The grid is generated with random obstacles each time the game starts.
+- **Pathfinding Algorithm**: The agent uses BFS to navigate towards the target.
+- **Interactive Visualization**: A graphical interface built with Pygame displays the grid, agent, obstacles, and target.
+- **Score Tracking**: Rewards and penalties are tracked based on the agent's actions.
+
+---
+
+## Project Details
+
+### Technologies Used
+- **Python**: Programming language used for implementation.
+- **Pygame**: For graphical rendering and game loop management.
+- **Pathfinding with BFS**: Ensures the agent takes the shortest path to the target.
+
+### How It Works
+1. The grid is initialized with:
+   - A fixed number of obstacles.
+   - An agent starting at the top-left corner.
+   - A target at the bottom-right corner.
+2. The agent moves step-by-step using BFS to calculate the shortest path to the target.
+3. The simulation updates visually in real-time, and the agent's score is displayed based on:
+   - Rewards for reaching the target.
+   - Penalties for hitting obstacles.
+
+---
+
+## Setup and Installation
+
+### Prerequisites
+- Python 3.x installed on your system.
+- Pygame library. Install it via pip:
+  ```bash
+  pip install pygame
